@@ -33,10 +33,10 @@ my $api_instance = WWW::OpenAPIClient::ReverseApi->new(
 
 my $lat = 17.24; # double | Latitude of the location to generate an address for.
 my $lon = 74.25; # double | Longitude of the location to generate an address for.
-my $format = json; # string | Format to geocode. Only JSON supported for SDKs
+my $format = "json"; # string | Format to geocode. Only JSON supported for SDKs
 my $normalizecity = 1; # int | Normalizes village to city level data to city
 my $addressdetails = 1; # int | Include a breakdown of the address into elements. Defaults to 1.
-my $accept_language = en; # string | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
+my $accept_language = "en"; # string | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
 my $namedetails = 0; # int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 my $extratags = 0; # int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
 
