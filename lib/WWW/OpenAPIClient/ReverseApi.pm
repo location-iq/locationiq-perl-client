@@ -61,6 +61,7 @@ sub new {
 # @param string $accept_language Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native (optional)
 # @param int $namedetails Include a list of alternative names in the results. These may include language variants, references, operator and brand. (optional)
 # @param int $extratags Include additional information in the result if available, e.g. wikipedia link, opening hours. (optional)
+# @param int $statecode Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 (optional)
 {
     my $params = {
     'lat' => {
@@ -101,6 +102,11 @@ sub new {
     'extratags' => {
         data_type => 'int',
         description => 'Include additional information in the result if available, e.g. wikipedia link, opening hours.',
+        required => '0',
+    },
+    'statecode' => {
+        data_type => 'int',
+        description => 'Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0',
         required => '0',
     },
     };
@@ -188,6 +194,11 @@ sub reverse {
     # query params
     if ( exists $args{'extratags'}) {
         $query_params->{'extratags'} = $self->{api_client}->to_query_value($args{'extratags'});
+    }
+
+    # query params
+    if ( exists $args{'statecode'}) {
+        $query_params->{'statecode'} = $self->{api_client}->to_query_value($args{'statecode'});
     }
 
     my $_body_data;

@@ -150,14 +150,23 @@ __PACKAGE__->method_documentation({
     	format => '',
     	read_only => '',
     		},
+    'bonus' => {
+    	datatype => 'int',
+    	base_name => 'bonus',
+    	description => '',
+    	format => '',
+    	read_only => '',
+    		},
 });
 
 __PACKAGE__->openapi_types( {
-    'day' => 'int'
+    'day' => 'int',
+    'bonus' => 'int'
 } );
 
 __PACKAGE__->attribute_map( {
-    'day' => 'day'
+    'day' => 'day',
+    'bonus' => 'bonus'
 } );
 
 __PACKAGE__->mk_accessors(keys %{__PACKAGE__->attribute_map});

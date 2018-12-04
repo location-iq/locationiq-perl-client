@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **reverse**
-> Location reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags)
+> Location reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode)
 
 Reverse Geocoding
 
@@ -39,9 +39,10 @@ my $addressdetails = 1; # int | Include a breakdown of the address into elements
 my $accept_language = "en"; # string | Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language=native
 my $namedetails = 0; # int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 my $extratags = 0; # int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
+my $statecode = 0; # int | Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0
 
 eval { 
-    my $result = $api_instance->reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags);
+    my $result = $api_instance->reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode);
     print Dumper($result);
 };
 if ($@) {
@@ -61,6 +62,7 @@ Name | Type | Description  | Notes
  **accept_language** | **string**| Preferred language order for showing search results, overrides the value specified in the Accept-Language HTTP header. Defaults to en. To use native language for the response when available, use accept-language&#x3D;native | [optional] 
  **namedetails** | **int**| Include a list of alternative names in the results. These may include language variants, references, operator and brand. | [optional] 
  **extratags** | **int**| Include additional information in the result if available, e.g. wikipedia link, opening hours. | [optional] 
+ **statecode** | **int**| Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 | [optional] 
 
 ### Return type
 
