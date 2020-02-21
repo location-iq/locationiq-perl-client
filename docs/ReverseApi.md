@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **reverse**
-> Location reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode)
+> Location reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode, showdistance => $showdistance, postaladdress => $postaladdress)
 
 Reverse Geocoding
 
@@ -31,8 +31,8 @@ my $api_instance = WWW::OpenAPIClient::ReverseApi->new(
     #api_key_prefix => {'key' => 'Bearer'},
 );
 
-my $lat = 17.24; # double | Latitude of the location to generate an address for.
-my $lon = 74.25; # double | Longitude of the location to generate an address for.
+my $lat = 40.7487727; # double | Latitude of the location to generate an address for.
+my $lon = -73.9849336; # double | Longitude of the location to generate an address for.
 my $format = "json"; # string | Format to geocode. Only JSON supported for SDKs
 my $normalizecity = 1; # int | Normalizes village to city level data to city
 my $addressdetails = 1; # int | Include a breakdown of the address into elements. Defaults to 1.
@@ -40,9 +40,11 @@ my $accept_language = "en"; # string | Preferred language order for showing sear
 my $namedetails = 0; # int | Include a list of alternative names in the results. These may include language variants, references, operator and brand.
 my $extratags = 0; # int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
 my $statecode = 0; # int | Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0
+my $showdistance = 0; # int | Returns the straight line distance (meters) between the input location and the result's location. Value is set in the distance key of the response. Defaults to 0 [0,1]
+my $postaladdress = 0; # int | Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1]
 
 eval { 
-    my $result = $api_instance->reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode);
+    my $result = $api_instance->reverse(lat => $lat, lon => $lon, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, accept_language => $accept_language, namedetails => $namedetails, extratags => $extratags, statecode => $statecode, showdistance => $showdistance, postaladdress => $postaladdress);
     print Dumper($result);
 };
 if ($@) {
@@ -63,6 +65,8 @@ Name | Type | Description  | Notes
  **namedetails** | **int**| Include a list of alternative names in the results. These may include language variants, references, operator and brand. | [optional] 
  **extratags** | **int**| Include additional information in the result if available, e.g. wikipedia link, opening hours. | [optional] 
  **statecode** | **int**| Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 | [optional] 
+ **showdistance** | **int**| Returns the straight line distance (meters) between the input location and the result&#39;s location. Value is set in the distance key of the response. Defaults to 0 [0,1] | [optional] 
+ **postaladdress** | **int**| Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1] | [optional] 
 
 ### Return type
 

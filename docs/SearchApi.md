@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **search**
-> ARRAY[Location] search(q => $q, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, viewbox => $viewbox, bounded => $bounded, limit => $limit, accept_language => $accept_language, countrycodes => $countrycodes, namedetails => $namedetails, dedupe => $dedupe, extratags => $extratags, statecode => $statecode)
+> ARRAY[Location] search(q => $q, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, viewbox => $viewbox, bounded => $bounded, limit => $limit, accept_language => $accept_language, countrycodes => $countrycodes, namedetails => $namedetails, dedupe => $dedupe, extratags => $extratags, statecode => $statecode, matchquality => $matchquality, postaladdress => $postaladdress)
 
 Forward Geocoding
 
@@ -44,9 +44,11 @@ my $namedetails = 1; # int | Include a list of alternative names in the results.
 my $dedupe = 1; # int | Sometimes you have several objects in OSM identifying the same place or object in reality. The simplest case is a street being split in many different OSM ways due to different characteristics. Nominatim will attempt to detect such duplicates and only return one match; this is controlled by the dedupe parameter which defaults to 1. Since the limit is, for reasons of efficiency, enforced before and not after de-duplicating, it is possible that de-duplicating leaves you with less results than requested.
 my $extratags = 0; # int | Include additional information in the result if available, e.g. wikipedia link, opening hours.
 my $statecode = 0; # int | Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0
+my $matchquality = 0; # int | Returns additional information about quality of the result in a matchquality object. Read more Defaults to 0 [0,1]
+my $postaladdress = 0; # int | Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1]
 
 eval { 
-    my $result = $api_instance->search(q => $q, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, viewbox => $viewbox, bounded => $bounded, limit => $limit, accept_language => $accept_language, countrycodes => $countrycodes, namedetails => $namedetails, dedupe => $dedupe, extratags => $extratags, statecode => $statecode);
+    my $result = $api_instance->search(q => $q, format => $format, normalizecity => $normalizecity, addressdetails => $addressdetails, viewbox => $viewbox, bounded => $bounded, limit => $limit, accept_language => $accept_language, countrycodes => $countrycodes, namedetails => $namedetails, dedupe => $dedupe, extratags => $extratags, statecode => $statecode, matchquality => $matchquality, postaladdress => $postaladdress);
     print Dumper($result);
 };
 if ($@) {
@@ -71,6 +73,8 @@ Name | Type | Description  | Notes
  **dedupe** | **int**| Sometimes you have several objects in OSM identifying the same place or object in reality. The simplest case is a street being split in many different OSM ways due to different characteristics. Nominatim will attempt to detect such duplicates and only return one match; this is controlled by the dedupe parameter which defaults to 1. Since the limit is, for reasons of efficiency, enforced before and not after de-duplicating, it is possible that de-duplicating leaves you with less results than requested. | [optional] 
  **extratags** | **int**| Include additional information in the result if available, e.g. wikipedia link, opening hours. | [optional] 
  **statecode** | **int**| Adds state or province code when available to the statecode key inside the address element. Currently supported for addresses in the USA, Canada and Australia. Defaults to 0 | [optional] 
+ **matchquality** | **int**| Returns additional information about quality of the result in a matchquality object. Read more Defaults to 0 [0,1] | [optional] 
+ **postaladdress** | **int**| Returns address inside the postaladdress key, that is specifically formatted for each country. Currently supported for addresses in Germany. Defaults to 0 [0,1] | [optional] 
 
 ### Return type
 
