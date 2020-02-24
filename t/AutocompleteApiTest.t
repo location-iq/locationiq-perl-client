@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::AutocompleteApi');
+use_ok('LocationIq::AutocompleteApi');
 
-my $api = WWW::OpenAPIClient::AutocompleteApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::AutocompleteApi');
+my $api = LocationIq::AutocompleteApi->new();
+isa_ok($api, 'LocationIq::AutocompleteApi');
 
 #
 # autocomplete test

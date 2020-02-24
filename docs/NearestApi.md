@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::NearestApi
+# LocationIq::NearestApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::NearestApi;
+use LocationIq::Object::NearestApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ Snaps a coordinate to the street network and returns the nearest n matches. Wher
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::NearestApi;
-my $api_instance = WWW::OpenAPIClient::NearestApi->new(
+use LocationIq::NearestApi;
+my $api_instance = LocationIq::NearestApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

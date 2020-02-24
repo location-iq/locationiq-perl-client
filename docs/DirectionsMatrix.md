@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::DirectionsMatrix
+# LocationIq::Object::DirectionsMatrix
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::DirectionsMatrix;
+use LocationIq::Object::DirectionsMatrix;
 ```
 
 ## Properties

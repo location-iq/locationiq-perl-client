@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::DirectionsMatrix');
+use_ok('LocationIq::Object::DirectionsMatrix');
 
-my $instance = WWW::OpenAPIClient::Object::DirectionsMatrix->new();
+my $instance = LocationIq::Object::DirectionsMatrix->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::DirectionsMatrix');
+isa_ok($instance, 'LocationIq::Object::DirectionsMatrix');
 

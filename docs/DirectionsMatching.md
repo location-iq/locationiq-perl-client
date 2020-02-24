@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::DirectionsMatching
+# LocationIq::Object::DirectionsMatching
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::DirectionsMatching;
+use LocationIq::Object::DirectionsMatching;
 ```
 
 ## Properties

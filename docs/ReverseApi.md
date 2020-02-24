@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::ReverseApi
+# LocationIq::ReverseApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::ReverseApi;
+use LocationIq::Object::ReverseApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ Reverse geocoding is the process of converting a coordinate or location (latitud
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::ReverseApi;
-my $api_instance = WWW::OpenAPIClient::ReverseApi->new(
+use LocationIq::ReverseApi;
+my $api_instance = LocationIq::ReverseApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

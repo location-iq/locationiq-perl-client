@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::Matchquality
+# LocationIq::Object::Matchquality
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Matchquality;
+use LocationIq::Object::Matchquality;
 ```
 
 ## Properties

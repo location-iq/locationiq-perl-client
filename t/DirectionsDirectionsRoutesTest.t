@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::DirectionsDirectionsRoutes');
+use_ok('LocationIq::Object::DirectionsDirectionsRoutes');
 
-my $instance = WWW::OpenAPIClient::Object::DirectionsDirectionsRoutes->new();
+my $instance = LocationIq::Object::DirectionsDirectionsRoutes->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::DirectionsDirectionsRoutes');
+isa_ok($instance, 'LocationIq::Object::DirectionsDirectionsRoutes');
 

@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::AutocompleteApi
+# LocationIq::AutocompleteApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::AutocompleteApi;
+use LocationIq::Object::AutocompleteApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ The Autocomplete API is a variant of the Search API that returns place predictio
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::AutocompleteApi;
-my $api_instance = WWW::OpenAPIClient::AutocompleteApi->new(
+use LocationIq::AutocompleteApi;
+my $api_instance = LocationIq::AutocompleteApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

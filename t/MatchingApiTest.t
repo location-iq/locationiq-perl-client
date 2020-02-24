@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::MatchingApi');
+use_ok('LocationIq::MatchingApi');
 
-my $api = WWW::OpenAPIClient::MatchingApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::MatchingApi');
+my $api = LocationIq::MatchingApi->new();
+isa_ok($api, 'LocationIq::MatchingApi');
 
 #
 # matching test

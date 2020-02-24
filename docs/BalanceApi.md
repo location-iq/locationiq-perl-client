@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::BalanceApi
+# LocationIq::BalanceApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::BalanceApi;
+use LocationIq::Object::BalanceApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ The Balance API provides a count of request credits left in the user's account f
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::BalanceApi;
-my $api_instance = WWW::OpenAPIClient::BalanceApi->new(
+use LocationIq::BalanceApi;
+my $api_instance = LocationIq::BalanceApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

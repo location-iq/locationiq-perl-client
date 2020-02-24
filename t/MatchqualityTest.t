@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::Matchquality');
+use_ok('LocationIq::Object::Matchquality');
 
-my $instance = WWW::OpenAPIClient::Object::Matchquality->new();
+my $instance = LocationIq::Object::Matchquality->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::Matchquality');
+isa_ok($instance, 'LocationIq::Object::Matchquality');
 

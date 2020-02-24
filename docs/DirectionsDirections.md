@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::DirectionsDirections
+# LocationIq::Object::DirectionsDirections
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::DirectionsDirections;
+use LocationIq::Object::DirectionsDirections;
 ```
 
 ## Properties

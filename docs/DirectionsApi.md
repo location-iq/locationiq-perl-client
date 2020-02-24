@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::DirectionsApi
+# LocationIq::DirectionsApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::DirectionsApi;
+use LocationIq::Object::DirectionsApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ Finds the fastest route between coordinates in the supplied order.
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::DirectionsApi;
-my $api_instance = WWW::OpenAPIClient::DirectionsApi->new(
+use LocationIq::DirectionsApi;
+my $api_instance = LocationIq::DirectionsApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

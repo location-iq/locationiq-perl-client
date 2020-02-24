@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::MatrixApi');
+use_ok('LocationIq::MatrixApi');
 
-my $api = WWW::OpenAPIClient::MatrixApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::MatrixApi');
+my $api = LocationIq::MatrixApi->new();
+isa_ok($api, 'LocationIq::MatrixApi');
 
 #
 # matrix test

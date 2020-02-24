@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::MatchingApi
+# LocationIq::MatchingApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::MatchingApi;
+use LocationIq::Object::MatchingApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ Matching API matches or snaps given GPS points to the road network in the most p
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::MatchingApi;
-my $api_instance = WWW::OpenAPIClient::MatchingApi->new(
+use LocationIq::MatchingApi;
+my $api_instance = LocationIq::MatchingApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::SearchApi');
+use_ok('LocationIq::SearchApi');
 
-my $api = WWW::OpenAPIClient::SearchApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::SearchApi');
+my $api = LocationIq::SearchApi->new();
+isa_ok($api, 'LocationIq::SearchApi');
 
 #
 # search test

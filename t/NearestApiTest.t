@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::NearestApi');
+use_ok('LocationIq::NearestApi');
 
-my $api = WWW::OpenAPIClient::NearestApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::NearestApi');
+my $api = LocationIq::NearestApi->new();
+isa_ok($api, 'LocationIq::NearestApi');
 
 #
 # nearest test

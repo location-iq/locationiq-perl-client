@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::DirectionsNearest
+# LocationIq::Object::DirectionsNearest
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::DirectionsNearest;
+use LocationIq::Object::DirectionsNearest;
 ```
 
 ## Properties

@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::ReverseApi');
+use_ok('LocationIq::ReverseApi');
 
-my $api = WWW::OpenAPIClient::ReverseApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::ReverseApi');
+my $api = LocationIq::ReverseApi->new();
+isa_ok($api, 'LocationIq::ReverseApi');
 
 #
 # reverse test

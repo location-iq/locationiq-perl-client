@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::Balance');
+use_ok('LocationIq::Object::Balance');
 
-my $instance = WWW::OpenAPIClient::Object::Balance->new();
+my $instance = LocationIq::Object::Balance->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::Balance');
+isa_ok($instance, 'LocationIq::Object::Balance');
 

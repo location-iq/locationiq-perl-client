@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::Error');
+use_ok('LocationIq::Object::Error');
 
-my $instance = WWW::OpenAPIClient::Object::Error->new();
+my $instance = LocationIq::Object::Error->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::Error');
+isa_ok($instance, 'LocationIq::Object::Error');
 

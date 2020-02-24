@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::DirectionsApi');
+use_ok('LocationIq::DirectionsApi');
 
-my $api = WWW::OpenAPIClient::DirectionsApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::DirectionsApi');
+my $api = LocationIq::DirectionsApi->new();
+isa_ok($api, 'LocationIq::DirectionsApi');
 
 #
 # directions test

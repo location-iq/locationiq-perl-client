@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::Error
+# LocationIq::Object::Error
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Error;
+use LocationIq::Object::Error;
 ```
 
 ## Properties

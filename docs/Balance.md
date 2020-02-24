@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::Balance
+# LocationIq::Object::Balance
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Balance;
+use LocationIq::Object::Balance;
 ```
 
 ## Properties

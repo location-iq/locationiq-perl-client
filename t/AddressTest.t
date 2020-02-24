@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::Address');
+use_ok('LocationIq::Object::Address');
 
-my $instance = WWW::OpenAPIClient::Object::Address->new();
+my $instance = LocationIq::Object::Address->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::Address');
+isa_ok($instance, 'LocationIq::Object::Address');
 

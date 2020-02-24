@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::DirectionsNearest');
+use_ok('LocationIq::Object::DirectionsNearest');
 
-my $instance = WWW::OpenAPIClient::Object::DirectionsNearest->new();
+my $instance = LocationIq::Object::DirectionsNearest->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::DirectionsNearest');
+isa_ok($instance, 'LocationIq::Object::DirectionsNearest');
 

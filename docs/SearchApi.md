@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::SearchApi
+# LocationIq::SearchApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::SearchApi;
+use LocationIq::Object::SearchApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ The Search API allows converting addresses, such as a street address, into geogr
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::SearchApi;
-my $api_instance = WWW::OpenAPIClient::SearchApi->new(
+use LocationIq::SearchApi;
+my $api_instance = LocationIq::SearchApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},

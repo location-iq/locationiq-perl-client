@@ -24,10 +24,10 @@ use lib 'lib';
 use strict;
 use warnings;
 
-use_ok('WWW::OpenAPIClient::BalanceApi');
+use_ok('LocationIq::BalanceApi');
 
-my $api = WWW::OpenAPIClient::BalanceApi->new();
-isa_ok($api, 'WWW::OpenAPIClient::BalanceApi');
+my $api = LocationIq::BalanceApi->new();
+isa_ok($api, 'LocationIq::BalanceApi');
 
 #
 # balance test

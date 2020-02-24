@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::Location
+# LocationIq::Object::Location
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Location;
+use LocationIq::Object::Location;
 ```
 
 ## Properties

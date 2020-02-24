@@ -25,9 +25,9 @@ use strict;
 use warnings;
 
 
-use_ok('WWW::OpenAPIClient::Object::Daybalance');
+use_ok('LocationIq::Object::Daybalance');
 
-my $instance = WWW::OpenAPIClient::Object::Daybalance->new();
+my $instance = LocationIq::Object::Daybalance->new();
 
-isa_ok($instance, 'WWW::OpenAPIClient::Object::Daybalance');
+isa_ok($instance, 'LocationIq::Object::Daybalance');
 

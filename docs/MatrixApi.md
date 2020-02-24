@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::MatrixApi
+# LocationIq::MatrixApi
 
 ## Load the API package
 ```perl
-use WWW::OpenAPIClient::Object::MatrixApi;
+use LocationIq::Object::MatrixApi;
 ```
 
 All URIs are relative to *https://eu1.locationiq.com/v1*
@@ -22,8 +22,8 @@ Computes duration of the fastest route between all pairs of supplied coordinates
 ### Example 
 ```perl
 use Data::Dumper;
-use WWW::OpenAPIClient::MatrixApi;
-my $api_instance = WWW::OpenAPIClient::MatrixApi->new(
+use LocationIq::MatrixApi;
+my $api_instance = LocationIq::MatrixApi->new(
 
     # Configure API key authorization: key
     api_key => {'key' => 'YOUR_API_KEY'},
