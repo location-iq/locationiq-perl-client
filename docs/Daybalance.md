@@ -1,8 +1,8 @@
-# WWW::OpenAPIClient::Object::Daybalance
+# LocationIq::Object::Daybalance
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Daybalance;
+use LocationIq::Object::Daybalance;
 ```
 
 ## Properties

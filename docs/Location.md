@@ -1,13 +1,14 @@
-# WWW::OpenAPIClient::Object::Location
+# LocationIq::Object::Location
 
 ## Load the model package
 ```perl
-use WWW::OpenAPIClient::Object::Location;
+use LocationIq::Object::Location;
 ```
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**distance** | **double** |  | [optional] 
 **place_id** | **string** |  | [optional] 
 **licence** | **string** |  | [optional] 
 **osm_type** | **string** |  | [optional] 
@@ -21,6 +22,7 @@ Name | Type | Description | Notes
 **importance** | **double** |  | [optional] 
 **address** | [**Address**](Address.md) |  | [optional] 
 **namedetails** | [**Namedetails**](Namedetails.md) |  | [optional] 
+**matchquality** | [**Matchquality**](Matchquality.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
